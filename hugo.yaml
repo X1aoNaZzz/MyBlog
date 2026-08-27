@@ -23,13 +23,13 @@ languages:
         - identifier: blog
           name: Blog
           title: Blog
-          url: /MyBlog/blogs/
+          url: /blogs
           weight: 3
 
         - identifier: gallery
           name: 画廊
           title: 画廊
-          url: /MyBlog/gallery/
+          url: /gallery
           weight: 4
   es:
     languageName: "Español"
@@ -40,12 +40,12 @@ languages:
         - identifier: blog
           name: Blog
           title: Publicaciones del blog
-          url: /MyBlog/es/blogs/
+          url: /es/blogs
           weight: 1
         - identifier: gallery
           name: Galería
           title: Galería de imágenes
-          url: /MyBlog/es/gallery/
+          url: /es/gallery
           weight: 2
     params:
       hero:
@@ -246,12 +246,12 @@ languages:
         - identifier: blog
           name: Blog
           title: Articles de blog
-          url: /MyBlog/fr/blogs/
+          url: /fr/blogs
           weight: 1
         - identifier: gallery
           name: Galerie
           title: Galerie d'images
-          url: /MyBlog/fr/gallery/
+          url: /fr/gallery
           weight: 2
     params:
       hero:
@@ -484,7 +484,7 @@ Menus:
     # - identifier:gallery
     #   title: Gallery
     #   name: Gallery
-    #   url: /MyBlog/gallery//
+    #   url: /gallery/
     #   parent: dropdown
     #   weight: 3
     # - identifier: about
