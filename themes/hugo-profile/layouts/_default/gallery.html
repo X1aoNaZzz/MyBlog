@@ -3,7 +3,7 @@
 <meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
 
 {{ if .Params.viewer | default true }}
-<link rel="stylesheet" href="/css/gallery-custom.css">
+<link rel="stylesheet" href="{{ "css/gallery-custom.css" | relURL }}">
 <link rel="stylesheet" href="{{ (printf "%sviewer/viewer.min.css" (.Site.Params.staticPath | default "")) | relURL }}">
 <script src="{{ (printf "%sviewer/viewer.min.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>
 {{ end }}
