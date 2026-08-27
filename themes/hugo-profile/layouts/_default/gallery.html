@@ -1,0 +1,62 @@
+{{ define "head" }}
+
+<meta name="description" content="{{ .Title }} of {{ .Site.Title }}">
+
+{{ if .Params.viewer | default true }}
+<link rel="stylesheet" href="/css/gallery-custom.css">
+<link rel="stylesheet" href="{{ (printf "%sviewer/viewer.min.css" (.Site.Params.staticPath | default "")) | relURL }}">
+<script src="{{ (printf "%sviewer/viewer.min.js" (.Site.Params.staticPath | default "")) | relURL }}"></script>
+{{ end }}
+
+{{ end }}
+
+
+{{ define "title" }}
+{{ .Title }} | {{ .Site.Title }}
+{{ end }}
+
+
+{{ define "main" }}
+
+<div class="container pt-5" id="list-page">
+
+    <h2 class="text-center pb-2">{{ .Title }}</h2>
+
+    <h6 class="text-center">
+        {{ .Params.description | emojify }}
+    </h6>
+
+    <div class="row p-4">
+        {{ .Content | emojify }}
+    </div>
+
+    <div class="row justify-content-center p-4 idol-gallery">
+
+        {{ range .Params.galleryImages }}
+
+        <div class="col-md-6 col-lg-4 mb-4">
+
+            <div class="card border-0">
+
+<img
+    class="idol-gallery-image"
+    src="{{ .src }}"
+    alt="Gallery Image"
+>
+<div class="idol-gallery-name">{{ .name }}</div>
+
+{{ if .description }}
+<div class="idol-gallery-description">{{ .description }}</div>
+{{ end }}
+               
+            </div>
+
+        </div>
+
+        {{ end }}
+
+    </div>
+
+</div>
+
+{{ end }}
