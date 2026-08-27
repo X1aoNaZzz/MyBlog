@@ -1,0 +1,60 @@
+.idol-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.idol-gallery > div {
+    padding: 12px;
+}
+
+.idol-gallery-image {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.idol-gallery-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.idol-gallery-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+color: #3498db;
+}
+.idol-gallery-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3498db;
+    margin-top: 10px;
+}
+
+.idol-gallery-name::after {
+    content: " · Idol Photo";
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: 0.6;
+    margin-top: 3px;
+}
+@media (hover: none) and (pointer: coarse) {
+    .idol-gallery-image:active {
+        transform: scale(1.03);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+}
+.idol-gallery-description {
+    text-align: center;
+    font-size: 13px;
+   color: #85bde6;
+    margin-top: 3px;
+}
