@@ -573,7 +573,7 @@ params:
     title: "XiaoNaZzz'S WORLD"
     subtitle: "一个属于我的自留空间"
     content: "Anime · Idol · Pokémon · 特摄 · Music · Game"
-    image: /images/hero.svg
+    image: /images/myphoto/zipai.jpg
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
