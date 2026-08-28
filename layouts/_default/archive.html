@@ -1,0 +1,157 @@
+{{ define "main" }}
+
+<section class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+
+      <h1 class="text-center mb-5">ARCHIVE</h1>
+
+      {{ $pages := where site.RegularPages "Section" "blogs" }}
+      {{ $years := $pages.GroupByDate "2006" }}
+
+      <div class="archive-list">
+
+        {{ range $years }}
+
+        <details class="archive-year">
+          <summary>
+            <span class="archive-arrow">▶</span>
+            <span class="archive-year-title">{{ .Key }}</span>
+          </summary>
+
+          <div class="archive-months">
+
+            {{ $months := .Pages.GroupByDate "01" }}
+
+            {{ range $months }}
+
+            <details class="archive-month">
+
+              <summary>
+                <span class="archive-arrow">▶</span>
+                <span>{{ time.AsTime (printf "2000-%s-01" .Key) | time.Format "01月" }}</span>
+              </summary>
+
+              <div class="archive-posts">
+
+                {{ range .Pages.ByDate.Reverse }}
+
+                <div class="archive-post">
+                  <span class="archive-date">
+                    {{ .Date.Format "02日" }}
+                  </span>
+
+                  <span class="archive-line">—</span>
+
+                  <a href="{{ .RelPermalink }}">
+                    {{ .Title }}
+                  </a>
+                </div>
+
+                {{ end }}
+
+              </div>
+
+            </details>
+
+            {{ end }}
+
+          </div>
+
+        </details>
+
+        {{ end }}
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+
+.archive-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.archive-year {
+  margin-bottom: 20px;
+}
+
+.archive-year > summary {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.archive-month {
+  margin: 12px 0 0 30px;
+}
+
+.archive-month > summary {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.archive-arrow {
+  display: inline-block;
+  width: 22px;
+  font-size: 0.8em;
+  transition: transform 0.2s ease;
+}
+
+details[open] > summary .archive-arrow {
+  transform: rotate(90deg);
+}
+
+.archive-months {
+  margin-top: 10px;
+}
+
+.archive-posts {
+  margin-left: 52px;
+  padding-left: 18px;
+  border-left: 1px solid rgba(128, 128, 128, 0.35);
+}
+
+.archive-post {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 7px 0;
+}
+
+.archive-date {
+  min-width: 42px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0.75;
+}
+
+.archive-line {
+  opacity: 0.4;
+}
+
+.archive-post a {
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.archive-post a:hover {
+  opacity: 0.65;
+}
+
+.archive-year > summary,
+.archive-month > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.archive-year > summary::-webkit-details-marker,
+.archive-month > summary::-webkit-details-marker {
+  display: none;
+}
+
+</style>
+
+{{ end }}
