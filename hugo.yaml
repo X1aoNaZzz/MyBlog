@@ -597,7 +597,7 @@ params:
   about:
     enable: true
     title: "ABOUT ME"
-    image: "/images/me.png"
+    image: "/MyBlog/images/me.png"
     content: |-
      Welcome to my little corner of the internet.
 
