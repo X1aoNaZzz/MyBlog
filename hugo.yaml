@@ -595,7 +595,7 @@ params:
         - icon: fab fa-weibo
           url: https://weibo.com/u/7581748392
       customIcons:
-        - icon: /MyBlog/images/myphoto/zipai.jpg
+        - icon: /MyBlog/images/bilibili-logo.jpg
           url: https://space.bilibili.com/436921723
 
   # About
