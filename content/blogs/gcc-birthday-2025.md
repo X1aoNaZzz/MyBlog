@@ -21,5 +21,5 @@ tags = ['生日会', '桂楚楚', '见面会']
 
 </div>
 
-<img src="/images/blogs/gcc-birthday2025.jpg" alt="第一次参加你的生日会" style="width:70%; display:block; margin:20px auto; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.15);">
+<img src="/MyBlog/images/blogs/gcc-birthday2025.jpg" alt="第一次参加你的生日会" style="width:70%; display:block; margin:20px auto; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.15);">
 
