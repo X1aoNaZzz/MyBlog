@@ -1,0 +1,54 @@
+/* Giscus 评论区 */
+.message-board {
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.message-board h2 {
+  margin-bottom: 30px;
+}
+
+.giscus {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.giscus-frame {
+  width: 100%;
+}
+
+/* 文章评论区 */
+#single .giscus {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.message-board-kaomoji {
+  font-size: 0.95rem;
+  opacity: 0.75;
+  margin-top: 0;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.comments-title {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.comments-kaomoji {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 0;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.comments-divider {
+  font-size: 0.8rem;
+  opacity: 0.45;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}

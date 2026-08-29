@@ -1,0 +1,70 @@
+﻿{{ if .Site.Params.hero.enable | default false }}
+<section id="hero" class="py-5 asuka-hero">
+    <div class="container px-3 px-sm-5 px-md-5 px-lg-5">
+        <div class="row align-items-center">
+
+            <div class="col-sm-12 col-lg-7 asuka-hero-content">
+
+                <div class="asuka-label">
+                    XiaoNaZzz's WORLD
+                </div>
+
+                <h1 class="asuka-title">
+                    一个属于<br>
+                    <span>我的小世界</span>
+                </h1>
+
+                <p class="asuka-subtitle">
+                    记录喜欢的人、事、物，也记录生活中那些值得留下的瞬间。
+                </p>
+
+                <p class="asuka-intro">
+                    INFJ · ACG重度依赖<br>
+                    Pokémon · 特摄 · 地下偶像<br>
+                    音乐 · anime · 游戏
+                </p>
+
+                <p class="asuka-quote">
+                    「记录喜欢的一切，也记录正在成为自己的我。」
+                </p>
+
+                <div class="asuka-buttons">
+                    <a href="/MyBlog/blogs/" class="asuka-btn">
+                        思い出の記録
+                    </a>
+
+                    <a href="/MyBlog/about/" class="asuka-btn asuka-btn-light">
+                        私について
+                    </a>
+                </div>
+
+                <div class="asuka-social">
+                    {{- partial "sections/hero/social.html" . -}}
+                </div>
+
+            </div>
+
+            <div class="col-sm-12 col-lg-5 text-center">
+                <div class="asuka-avatar-wrap">
+                    <div class="asuka-glow"></div>
+
+                    <img
+                        src="/MyBlog/images/myphoto/zipai.jpg"
+                        class="asuka-avatar"
+                        alt="XiaoNaZzz"
+                    >
+
+                    <div class="asuka-deco deco-1">♡</div>
+                    <div class="asuka-deco deco-2">✦</div>
+                    <div class="asuka-deco deco-3">♡</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+{{ end }}
+
+
+
+
