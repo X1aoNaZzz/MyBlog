@@ -30,4 +30,6 @@ tags = ["回忆", "告别", "偶像", "日常"]
 
 **今天也是非常六六六的66。大家好我是BEJ48的黄怡慈66，你们可以叫我草莓包饭！**
 
+<img src="/MyBlog/images/blogs/66=goodbey.jpg" alt="黄怡慈66" style="width:70%; display:block; margin:20px auto; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.15);">
+
 #黃怡慈66
